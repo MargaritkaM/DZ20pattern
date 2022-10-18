@@ -58,7 +58,6 @@ public class DataGenerator {
     }
 
     @Value
-    @Data
     public static class UserInfo {
         String city;
         String name;
