@@ -13,7 +13,6 @@ import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 import java.util.Random;
 
-@UtilityClass
 
 public class DataGenerator {
 
@@ -31,14 +30,12 @@ public class DataGenerator {
     }
 
     public static String generateName(String locale) {
-
         String name = faker.name().firstName() + " " + faker.name().lastName();
         return name;
 
     }
 
     public static String generatePhone(String locale) {
-
         String phone = faker.phoneNumber().phoneNumber();
         return phone;
     }
