@@ -30,7 +30,7 @@ class DeliveryTest {
         $("[data-test-id='phone'] input.input__control").setValue(generatePhone("ru"));
         $("[data-test-id='agreement'] ").click();
         $("div>button").click();
-        $("[data-test-id='success-notification']").should(visible, Duration.ofSeconds(15));
+        $("[data-test-id='success-notification']").should(Condition.visible, Duration.ofSeconds(15));
         $(".notification__content")
                 .shouldHave(Condition.text("Встреча успешно запланирована на " + planningDate), Duration.ofSeconds(15))
                 .shouldBe(Condition.visible);
